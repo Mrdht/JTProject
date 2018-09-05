@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="concrete"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <table id="7" parent="2" name="carowerinfo"/>
+    <table id="8" parent="2" name="country"/>
+    <table id="9" parent="2" name="t_add"/>
+    <table id="10" parent="2" name="t_jt61_user"/>
+    <table id="11" parent="2" name="timechange"/>
+    <table id="12" parent="2" name="userentity_roles"/>
+    <column id="13" parent="7" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="14" parent="7" name="carId">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="15" parent="7" name="carPersonAge">
+      <Position>3</Position>
+      <DataType>int(255)|0</DataType>
+    </column>
+    <column id="16" parent="7" name="carPersonName">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="17" parent="7" name="carPersonSFId">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="18" parent="7" name="carType">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="19" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="20" parent="8" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="8" name="country">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="22" parent="8" name="countryCode">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="23" parent="8" name="countryName">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="24" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="25" parent="9" name="x1">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="9" name="x2">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="9" name="col_sum">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="28" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>x1
+x2</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="10" name="age">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="31" parent="10" name="idCard">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="32" parent="10" name="name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="33" parent="10" name="password">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="34" parent="10" name="remark">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="35" parent="10" name="sex">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="36" parent="10" name="telPhoneNum">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="37" parent="10" name="type">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="38" parent="10" name="username">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="39" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="41" parent="11" name="carOwnerType">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="42" parent="11" name="carColor">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="43" parent="11" name="carPositionNum">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="44" parent="11" name="comeState">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="45" parent="11" name="operator">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="46" parent="11" name="comeTime">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="47" parent="11" name="carPersonName">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="48" parent="11" name="carOwnerInfoEntity_id">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="49" parent="11" name="FKe4bojtpgjdg7ax7l8fjck832d">
+      <ColNames>carOwnerInfoEntity_id</ColNames>
+    </index>
+    <key id="50" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="51" parent="11" name="FKe4bojtpgjdg7ax7l8fjck832d">
+      <ColNames>carOwnerInfoEntity_id</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>carowerinfo</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="52" parent="12" name="UserEntity_id">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="12" name="roles">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="54" parent="12" name="FKqqf3tl0l6tlw0yjman3qh72sd">
+      <ColNames>UserEntity_id</ColNames>
+    </index>
+    <foreign-key id="55" parent="12" name="FKqqf3tl0l6tlw0yjman3qh72sd">
+      <ColNames>UserEntity_id</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>t_jt61_user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

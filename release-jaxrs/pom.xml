@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>JTProject</artifactId>
+        <groupId>com.jt</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jt</groupId>
+    <artifactId>release-jaxrs</artifactId>
+
+    <dependencies>
+
+        <!-- 依赖api -->
+        <dependency>
+            <groupId>${project.parent.groupId}</groupId>
+            <artifactId>example-configuration-hibernate-mysql</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+
+        <!-- concrete基于spring的实现 -->
+        <dependency>
+            <groupId>org.coodex</groupId>
+            <artifactId>concrete-core-spring</artifactId>
+            <version>0.2.3-SNAPSHOT</version>
+        </dependency>
+
+        <!-- concrete 对jsr339的支持 -->
+        <dependency>
+            <groupId>org.coodex</groupId>
+            <artifactId>concrete-support-jsr339</artifactId>
+            <version>0.2.3-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jersey</artifactId>
+            <version>1.5.6.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.coodex</groupId>
+            <artifactId>concrete-api-tools</artifactId>
+            <version>0.2.3-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>1.5.6.RELEASE</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>

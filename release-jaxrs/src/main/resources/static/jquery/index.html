@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery SDK example</title>
+    <script type="text/javascript" rel="script"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/jquery-concrete.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 设置服务根
+            concrete.configure({
+                root: '/jaxrs'
+            });
+
+            var exampleModule = concrete.module("ExampleApi");
+
+            $('#add45').click(function () {
+                exampleModule.add(4,5).then(function (sum) {
+                    alert("4 + 5 = " + sum);
+                })
+            });
+
+            $('#add145').click(function () {
+                exampleModule.add(14,5).then(function (sum) {
+                    alert("14 + 5 = " + sum);
+                })
+            });
+        });
+    </script>
+</head>
+<body>
+<button id="add45">add(4, 5)</button>
+<button id="add145">add(14, 5)</button>
+</body>
+</html>

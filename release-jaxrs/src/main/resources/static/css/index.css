@@ -1,0 +1,324 @@
+
+*{
+
+    margin:0;
+    padding:0;
+
+}
+
+#top{
+
+    width:100%;
+    height:40px;
+    background:#B088FF;
+
+}
+
+#left{
+
+    width:22%;
+    height:718px;
+    background:#E0FFFF;
+
+}
+
+#right{
+
+    position: absolute;
+    top:40px;
+    left:340px;
+    width:77.8%;
+    height:718px;
+
+}
+
+#stop{
+
+    position: absolute;
+    top:12px;
+    left:50px;
+}
+
+#qstc{
+
+    position: absolute;
+    top:10px;
+    left:73px;
+    font-family: 仿宋;
+    font-weight: bolder;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+#stopArea{
+
+    position: absolute;
+    top:12px;
+    left:233px;
+    font-family:宋体;
+    font-weight: bolder;
+
+}
+
+.logout{
+
+    position: absolute;
+    top:10px;
+    right:0;
+    text-decoration: none;
+    color:black;
+    font-family: 仿宋;
+    font-weight: bolder;
+}
+
+.login{
+
+    position: absolute;
+    top:10px;
+    right:100px;
+    text-decoration: none;
+    color:black;
+    font-family: 仿宋;
+    font-weight: bolder;
+}
+
+#userManager{
+
+    position: absolute;
+    top:62px;
+    left:50px;
+}
+
+#userManager1{
+
+    position: absolute;
+    top:60px;
+    left:75px;
+    font-family: 宋体;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+#carNumber{
+
+    position: absolute;
+    top:2px;
+    left:640px;
+
+}
+
+#carNumber1{
+
+    position: absolute;
+    top:2px;
+    left:582px;
+}
+
+#userName1{
+
+    position: absolute;
+    top:2px;
+    left:208px;
+}
+
+#userName{
+
+    position: absolute;
+    top:2px;
+    left:265px;
+}
+
+#cx{
+
+    position: absolute;
+    top:17px;
+    height:30px;
+    width:1100px;
+    font-family: 宋体;
+    font-weight: bolder;
+
+}
+
+#query{
+    position: absolute;
+    top:2px;
+    left:1011px;
+    font-family: 宋体;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+#information{
+
+    display:none;
+}
+
+#user{
+
+    position: absolute;
+    top:89px;
+    left:87px;
+    list-style: none;
+    font-family: 宋体;
+    font-size:13px;
+
+}
+
+.user1:hover{
+
+    font-size: 15px;
+    color:white;
+    cursor:pointer;
+
+}
+
+.k{
+
+    display: none;
+}
+
+#addInformation{
+
+    display:none;
+
+}
+
+#stopCar{
+
+    position: absolute;
+    top:179px;
+    left:50px;
+}
+
+#stopCar1{
+
+    position: absolute;
+    top:175px;
+    left:75px;
+    font-family: 宋体;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#money{
+
+    position: absolute;
+    top:205px;
+    left:87px;
+    list-style: none;
+    font-family: 宋体;
+    font-size:13px;
+
+}
+
+#leftTop{
+
+    position: absolute;
+    top:5px;
+    left:10px;
+}
+
+#leftBottom{
+
+    position: absolute;
+    top:200px;
+    left:10px;
+}
+
+#rightTop{
+
+    position: absolute;
+    top:5px;
+    left:400px;
+}
+
+#rightBottom{
+
+    position: absolute;
+    top:200px;
+    left:400px;
+}
+
+
+#leftTop1{
+
+    position: absolute;
+    top:5px;
+    left:720px;
+}
+
+#leftBottom1{
+
+    position: absolute;
+    top:200px;
+    left:720px;
+}
+
+#rightTop1{
+
+    position: absolute;
+    top:5px;
+    right:10px;
+}
+
+#rightBottom1{
+
+    position: absolute;
+    top:200px;
+    right:10px;
+}
+
+#zm{
+
+    position: absolute;
+    top:15px;
+    left:25px;
+
+}
+
+
+#cm{
+
+    position: absolute;
+    top:15px;
+    right:21px;
+
+}
+
+#fx{
+
+    position: absolute;
+    top:420px;
+    left:450px;
+
+}
+
+#jf{
+
+    position: absolute;
+    top:420px;
+    left:700px;
+
+}
+
+#fx1{
+
+    position: absolute;
+    top:437px;
+    left:350px;
+    font-size: 20px;
+    font-family: 宋体;
+}
+
+#jf1{
+
+    position: absolute;
+    top:437px;
+    left:778px;
+    font-size: 20px;
+    font-family: 宋体;
+}
+

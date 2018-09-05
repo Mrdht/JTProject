@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="example-api" />
+        <module name="example-configuration-hibernate-mysql" />
+        <module name="example-impl" />
+        <module name="release-jaxrs" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="comtelchinatest" target="1.7" />
+      <module name="example-api" target="1.7" />
+      <module name="example-configuration-hibernate-mysql" target="1.7" />
+      <module name="example-impl" target="1.7" />
+      <module name="exampleapi" target="1.7" />
+      <module name="JTProject" target="1.7" />
+      <module name="JTProject (1)" target="1.7" />
+      <module name="release-jaxrs" target="1.7" />
+      <module name="releasejaxrs" target="1.7" />
+      <module name="telchina-api" target="1.7" />
+      <module name="telchinaconcrete" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

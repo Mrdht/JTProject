@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>停车系统主页</title>
+
+   <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+</head>
+
+<body>
+
+<div id="top" >
+
+    <img id="stop" src="../img/stop1.png">
+
+    <p id="qstc">轻松停车</p>
+
+    <select id="stopArea">
+
+        <option>三里屯停车场</option>
+        <option>七里河停车场</option>
+        <option>九里坑停车场</option>
+    </select>
+
+    <a class="login" href="login.html">用户登录</a>
+    <a class="logout" href="login.html">用户注销</a>
+
+
+</div>
+<div id="left">
+
+    <img id="userManager" src="../img/用户管理.png"><p id="userManager1">用户管理</p>
+
+    <ul id="user">
+
+        <li id="allUser" class="user1" style="background-color: #95a5a6;">所有用户</li><br/>
+        <li id="queryUser" class="user1" style="background-color: #95a5a6;">查询用户</li><br/>
+        <li id="addUser" class="user1" style="background-color: #95a5a6;">新增用户</li>
+
+    </ul>
+
+    <img id="stopCar" src="../img/stopCar.png"><p id="stopCar1">停车收费</p>
+    <ul id="money">
+
+        <li id="m" class="user1" style="background-color: #95a5a6;">开始计时</li><br/>
+        <li id="m1" class="user1" style="background-color: #95a5a6;">收取费用</li><br/>
+
+    </ul>
+
+</div>
+
+<div id="right">
+
+    <div id="cx">
+
+        <p class="k" id="userName1"> 车主名:</p><input class="k" id="userName" type="text"/>
+        <p class="k" id="carNumber1">车牌号:</p> <input class="k" id="carNumber" type="text"/>
+        <button class="k" id="query">查询</button><br/><br/>
+
+        <table  id="information" border=1px borderColor="#90EE90 " width=1195  cellspacing=0>
+
+            <tr id="tableTop"  height=30><th>车主</th><th>年龄</th><th>车牌号</th><th>车型</th><th>身份证号</th></tr>
+
+        </table>
+
+
+    </div>
+
+    <div id="l">
+    <table style="display:none;" id="information1" border=1px borderColor="#90EE90 " width=1195  cellspacing=0>
+
+        <tr id="tableTop1"  height=30><th>车主</th><th>年龄</th><th>车牌号</th><th>车型</th><th>身份证号</th><th>操作</th></tr>
+
+    </table>
+    </div>
+
+    <div  style="position:absolute;top:50px;">
+        <p id="addInformation" style="display: none">车主名:<input id="name" type="text"/>&nbsp;&nbsp;年龄:<input id="age" type="text"/>&nbsp;&nbsp;车牌号:<input id="number" type="text"/>&nbsp;&nbsp;车型:<input id="carType" type="text"/>&nbsp;&nbsp;身份证号码:<input id="sfzh" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;<button id="add" style="float: right">新增</button></p>
+    </div>
+
+    <div id="sf" style="display: none;">
+
+    <div>
+
+        <img id="leftTop" src="../img/leftTop.png"/><img id="leftBottom" src="../img/leftBottom.png"/><img id="rightTop" src="../img/rightTop.png"/><img id="rightBottom" src="../img/rightBottom.png"/>
+        <img id="zm" src="../img/侧面.jpg" style="width:440px; height:255px;"/>
+
+        </div>
+
+    <div>
+
+        <img id="leftTop1" src="../img/leftTop.png"/><img id="leftBottom1" src="../img/leftBottom.png"/><img id="rightTop1" src="../img/rightTop.png"/><img id="rightBottom1" src="../img/rightBottom.png"/>
+        <img id="cm" src="../img/正面.jpg" style="width:440px; height:255px;"/>
+    </div><br/>
+    <hr style="border-color:white;margin-top:360px;height:3px;background: #c0c0c0"/>
+
+    <div align="center">
+
+        <p style="margin-top: 8px;"> 车主姓名:<input id="carOwnerName" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;车辆型号:<input id="carType1" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;入场时间:<input id="comeTime" type="text"/></p>
+        <p style="margin-top: 5px;"> 车辆颜色:<input id="carColor" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;车牌号码:<input id="carNum" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;车位编号:<input id="positionNum" type="text"/></p>
+        <p style="margin-top: 5px;">入场状态:<input id="carState" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;用户类型:<input id="ownerType" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;操作人员:<input id="operator" type="text"/>
+           <br/> <button id="jssf" style="margin-left: 1100px" onclick="getMoney()">开始计时</button>
+    </div>
+
+    </div>
+
+        <div id="sf1" style="display: none">
+            <p> 车主姓名:<input id="carOwnerName1" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;<button id="query1">查询</button></p>
+
+            <hr style="border-color:white;margin-top:80px;height:3px;background: #c0c0c0"/>
+
+            车辆型号:<input id="carType2" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;入场时间:<input id="comeTime1" type="text"/></p>
+            <p style="margin-top: 5px;"> 车辆颜色:<input id="carColor1" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;车牌号码:<input id="carNum1" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;车位编号:<input id="positionNum1" type="text"/></p>
+            <p style="margin-top: 5px;">入场状态:<input id="carState1" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;用户类型:<input id="ownerType1" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;操作人员:<input id="operator1" type="text"/>
+
+            <div align="center" style="margin-top:180px"> <p>离场时间:<input id="leaveTime" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;￥:<input id="jsz" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;<button id="js">结算</button></p></div>
+            <hr style="border-color:white;height:3px;background: #c0c0c0"/>
+            <img  id="fx" src="../img/开闸放行.png/"><button id="fx1">开闸放行</button>
+            <img  id="jf" src="../img/拒绝放行.png/"><button id="jf1">拒绝放行</button>
+        </div>
+
+<div>
+
+    <img id="zouQi" src="../img/小汽车.jpg/" style="width: 80px;height: 60px;display: none;position: absolute;bottom:150px;right:200px;" >
+    <img id="zouQi1" src="../img/拒绝放行.jpg/" style="width: 80px;height: 60px;display: none;position: absolute;bottom:150px;left:200px;" >
+
+</div>
+
+
+</div>
+</body>
+
+<script type="text/javascript" rel="script" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/jquery-concrete.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script>
+
+    $("#queryUser").click(function(){
+
+        $(".k").show();
+        $("#information1").hide();
+        $("#addInformation").hide();
+        $("#sf").hide();
+        $("#sf1").hide();
+        $("#o").hide();
+
+    })
+
+        // 设置服务根
+        concrete.configure({
+            root: '/jaxrs'
+        });
+
+        var exampleModule=concrete.module("SelectOwnerInfo");
+        var allInfoModule=concrete.module("SelectAllOwnerInfoService");
+        var deleteModule=concrete.module("DeleteOwnerInfoService");
+        var updateModule=concrete.module("UpdateOwnerInfoService");
+        var addModule=concrete.module("AddOwnerInfoService");
+        var addChangeInfoModule=concrete.module("AddChangeInfoService");
+        var selectChangeInfo=concrete.module("SelectChangeInfoService");
+
+
+
+        $("#query").click(function(){
+
+            var userName=$("#userName").val();
+            var carNumber=$("#carNumber").val();
+
+            exampleModule.selectOwnerInfo(userName,carNumber).then(function(OwnerInfo){
+
+                if(OwnerInfo==null){
+
+                    alert("你输入的用户名或车牌号错误");
+
+                }else{
+                    $("#information").show();
+                    $("#addInformation").hide();
+                    $("#sf").hide();
+                    $("#tableTop").siblings().remove();
+
+                    $("#information").append("<tr align='center'><td>"+OwnerInfo.carPersonName+"</td>"+"<td>"+OwnerInfo.carPersonAge+"</td>"+"<td>"+OwnerInfo.carId+"</td>"+"<td>"+OwnerInfo.carType+"</td>"+"<td>"+OwnerInfo.carPersonSFId+"</td></tr>")
+
+                }
+
+            })
+
+        });
+
+        $("#allUser").click(function(){
+
+            $(".k").hide();
+            $("#information").hide();
+            $("#addInformation").hide();
+            $("#sf").hide();
+            $("#sf1").hide();
+            $("#o").hide();
+
+            allInfoModule.selectAllOwnerInfo(0).then(function(all){
+
+                $("#information1").show();
+
+                $("#tableTop1").siblings().remove();
+                $("#information1").siblings().remove();
+
+                for(var i=0;i<all.length;i++){
+
+                    $("#information1").append("<tr align='center'><td>"+all[i].carPersonName+"</td>"+"<td>"+all[i].carPersonAge+"</td>"+"<td>"+all[i].carId+"</td>"+"<td>"+all[i].carType+"</td>"+"<td>"+all[i].carPersonSFId+"</td><td style='display: none;'>"+all[i].id+"</td><td><button id='bj' onclick='updateOwnerInfo(this)'>编辑</button>"+"<button onclick='bcOwnerInfo(this)'>保存</button>"+"<button onclick='deleteOwnerInfo(this)'>删除</button></td></tr>")
+                }
+
+                $("#information1").after("<div id='o' align='center'>首页:<span>1</span>&nbsp;&nbsp;&nbsp;&nbsp;<button id='nextPage' onclick='page()'>下一页</button><span style='display: none'>2</span>&nbsp;&nbsp;&nbsp;&nbsp;尾页:<span>"+all[0].sumPage+"</span><span style='display: none'>3</span>&nbsp;&nbsp;&nbsp;&nbsp;<button id='fontPage' onclick='page1()'>上一页</button>&nbsp;&nbsp;&nbsp;&nbsp;总页数:<span>"+all[0].sumPage+"</span><input style='display: none' id='sp' value='"+all[0].sumPage+"'/></div>");
+
+            })
+
+        })
+
+    var k=0;
+
+    function page(){
+
+        var k1=$("#sp").val();
+
+
+       // console.log(k1)
+
+        k++;
+
+         if(k>k1-1)  {
+
+             k=0;
+
+         }
+       allInfoModule.selectAllOwnerInfo(k).then(function(all){
+
+       $("#information1").show();
+
+       $("#tableTop1").siblings().remove();
+
+
+       for(var i=0;i<all.length;i++){
+
+       $("#information1").append("<tr align='center'><td>"+all[i].carPersonName+"</td>"+"<td>"+all[i].carPersonAge+"</td>"+"<td>"+all[i].carId+"</td>"+"<td>"+all[i].carType+"</td>"+"<td>"+all[i].carPersonSFId+"</td><td style='display: none;'>"+all[i].id+"</td><td><button id='bj' onclick='updateOwnerInfo(this)'>编辑</button>"+"<button onclick='bcOwnerInfo(this)'>保存</button>"+"<button onclick='deleteOwnerInfo(this)'>删除</button></td></tr>")
+       }
+
+       })
+
+  }
+
+    var x=0;
+    function page1(){
+
+        var k1=$("#sp").val()-1;
+
+        x++;
+
+        var j=k1-x;
+
+        if(j<0)  {
+
+            j=0
+            x=0
+
+        }
+        allInfoModule.selectAllOwnerInfo(j).then(function(all){
+
+            $("#information1").show();
+
+            $("#tableTop1").siblings().remove();
+
+
+            for(var i=0;i<all.length;i++){
+
+                $("#information1").append("<tr align='center'><td>"+all[i].carPersonName+"</td>"+"<td>"+all[i].carPersonAge+"</td>"+"<td>"+all[i].carId+"</td>"+"<td>"+all[i].carType+"</td>"+"<td>"+all[i].carPersonSFId+"</td><td style='display: none;'>"+all[i].id+"</td><td><button id='bj' onclick='updateOwnerInfo(this)'>编辑</button>"+"<button onclick='bcOwnerInfo(this)'>保存</button>"+"<button onclick='deleteOwnerInfo(this)'>删除</button></td></tr>")
+            }
+
+        })
+
+    }
+
+    function deleteOwnerInfo(a){
+
+        var id=$(a).parent().parent().children('td').eq(5).html()
+
+        //console.log(id)
+
+        deleteModule.deleteOwnerInfo(id).then(function(){})
+
+        $(a).parent().parent().remove();
+
+    }
+
+
+   function updateOwnerInfo(b) {
+
+       for(var i=0;i<$(b).parent().siblings().length;i++){
+
+           $(b).parent().siblings().eq(i).html("<input style='text-align:center;'  type='text' value='"+$(b).parent().parent().children('td').eq(i).html()+"'/>")
+
+       }
+
+   }
+
+   function bcOwnerInfo(c){
+
+           var carId=$(c).parent().parent().children('td').eq(2).children().val()
+           var carPersonAge=$(c).parent().parent().children('td').eq(1).children().val()
+           var carPersonName=$(c).parent().parent().children('td').eq(0).children().val()
+           var carPersonSFId=$(c).parent().parent().children('td').eq(4).children().val()
+           var carType=$(c).parent().parent().children('td').eq(3).children().val()
+           var id=$(c).parent().parent().children('td').eq(5).children().val()
+
+          // console.log(carId+"  "+carPersonAge+"  "+carPersonName+"  "+carPersonSFId+"  "+carType+"  "+id)
+
+           updateModule.updateOwnerInfo(carId,carPersonAge,carPersonName,carPersonSFId,carType,id)
+
+   }
+
+   $("#addUser").click(function(){
+
+        $("#addInformation").show();
+        $("#information1").hide();
+        $("#information").hide()
+        $(".k").hide();
+        $("#sf").hide();
+       $("#sf1").hide();
+       $("#o").hide();
+        $("#add").click(function(){
+
+            var carId= $("#number").val();
+            var carPersonAge= $("#age").val();
+            var carPersonName= $("#name").val();
+            var carPersonSFId= $("#sfzh").val();
+            var carType= $("#carType").val();
+
+            //console.log(carId+"  "+carPersonAge+"  "+carPersonName+"  "+carPersonSFId+"  "+carType)
+
+            addModule.addOwnerInfo(carPersonName,carId,carPersonAge,carPersonSFId,carType);
+        })
+
+   })
+
+$("#m").click(function(){
+
+    $("#sf").show();
+    $("#addInformation").hide();
+    $("#information1").hide();
+    $("#information").hide()
+    $(".k").hide();
+    $("#sf1").hide();
+    $("#o").hide();
+
+})
+
+    function getMoney() {
+
+        var carOwnerType=$("#ownerType").val();
+        var carColor=$("#carColor").val();
+        var carPositionNum=$("#positionNum").val();
+        var comeState=$("#carState").val();
+        var operator=$("#operator").val();
+        var comeTime=$("#comeTime").val();
+        var carPersonName=$("#carOwnerName").val();
+        var carType=$("#carType1").val();
+        var carId=$("#carNum").val();
+
+        addChangeInfoModule.addTimeChangeInfo(carOwnerType,carColor,carPositionNum,comeState,operator,carPersonName,comeTime)
+        addChangeInfoModule.addCarOwnerInfoEntityInfo(carPersonName,carType,carId)
+
+        //window.location.reload();//刷新页面
+    }
+
+ $("#m1").click(function(){
+
+     $("#sf1").show();
+     $("#sf").hide();
+     $("#addInformation").hide();
+     $("#information1").hide();
+     $("#information").hide()
+     $(".k").hide();
+     $("#o").hide();
+
+ })
+
+    $("#query1").click(function(){
+
+        var carOwnerName=$("#carOwnerName1").val();
+
+        selectChangeInfo.selectChangeInfo(carOwnerName).then(function(timeChange){
+
+           // console.log(timeChange)
+            $("#carType2").val(timeChange.carType);
+            $("#comeTime1").val(timeChange.comeTime);
+            $("#carColor1").val(timeChange.carColor);
+            $("#carNum1").val(timeChange.carId);
+            $("#positionNum1").val(timeChange.carPositionNum);
+            $("#carState1").val(timeChange.comeState);
+            $("#ownerType1").val(timeChange.carOwnerType);
+            $("#operator1").val(timeChange.operator);
+            $("#leaveTime").val(timeChange.leaveTime);
+
+
+            $("#js").click(function(){
+
+                $("#jsz").val((timeChange.leaveTime-timeChange.comeTime)*3);
+
+            })
+
+
+        })
+
+    })
+
+    $("#fx1").click(function(){
+
+        $("#zouQi").show();
+        $("#zouQi").animate({left: "200px"}, 2000,"easeOutElastic",function(){
+
+            $("#zouQi").hide();
+        });
+
+    })
+
+    $("#jf1").click(function(){
+
+        $("#zouQi1").show();
+        $("#zouQi1").animate({left: "800px"}, 2000,"easeOutElastic",function(){
+
+            $("#zouQi1").hide();
+        });
+
+    })
+
+</script>
+
+</html>
